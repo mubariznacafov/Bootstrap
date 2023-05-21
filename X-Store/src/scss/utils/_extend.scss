@@ -1,0 +1,60 @@
+@use "../utils/variables" as *;
+%performance {
+  padding: 50px 0;
+  background: rgb(236, 227, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(236, 227, 255, 1) 0%,
+    rgba(238, 229, 255, 1) 6%,
+    rgba(237, 228, 255, 1) 20%,
+    rgba(245, 242, 251, 1) 63%
+  );
+  .container {
+    .row {
+      .information {
+        h5 {
+          color: $primary_color;
+        }
+        h1 {
+          font-size: 50px;
+          font-weight: 500;
+          span {
+            color: $primary_color_ton2;
+          }
+        }
+        p {
+          margin-top: 40px;
+          line-height: 35x;
+          font-size: 18px;
+          color: $grey_color;
+        }
+        .numbers {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 50px;
+
+          h1 {
+            font-size: 60px;
+            text-align: center;
+            color: $primary_color;
+          }
+          p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: $grey_color;
+          }
+        }
+      }
+      .computer_image {
+        width: 612px;
+        height: 413px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

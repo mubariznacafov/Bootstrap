@@ -1,0 +1,81 @@
+@use "../../utils/extend" as *;
+@use "../../utils/mixin" as *;
+@use "../../utils/variables" as *;
+
+#footer {
+  font-family: $font_family;
+  padding-top: 60px;
+  .container {
+    .row {
+      justify-content: space-evenly;
+      .left_information {
+        .logo {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 18px;
+          color: $white_color;
+        }
+      }
+      .center_left {
+        h5 {
+          color: $white_color;
+          margin-bottom: 25px;
+        }
+        ul {
+          padding: 0;
+          li {
+            list-style-type: none;
+            color: $white_color;
+            line-height: 36px;
+          }
+        }
+      }
+      .center_right {
+        h5 {
+          color: $white_color;
+          margin-bottom: 25px;
+        }
+        ul {
+          padding: 0;
+          li {
+            list-style-type: none;
+            color: $white_color;
+            line-height: 36px;
+          }
+        }
+      }
+      .right_information {
+        .follow_us {
+          color: $white_color;
+          margin-bottom: 30px;
+        }
+        ul {
+          padding: 0;
+          display: flex;
+          gap: 25px;
+          li {
+            color: $white_color;
+            list-style-type: none;
+            font-size: 20px;
+          }
+        }
+        .sign_up {
+          color: $white_color;
+          margin-top: 50px;
+          margin-bottom: 20px;
+        }
+        input {
+          background: transparent;
+          padding: 10px 15px;
+          outline: none;
+          border: 1px solid $white_color;
+          border-radius: 5px;
+          color: $white_color;
+          font-size: 15px;
+          width: 240px;
+        }
+      }
+    }
+  }
+}
